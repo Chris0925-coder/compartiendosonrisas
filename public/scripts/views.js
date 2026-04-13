@@ -17,9 +17,11 @@ let dom = dominio.split('/');
 
 let dom2 = dom[2];
 let numero = 10;
+console.log(dom, dom2);
 
 function domain() {
-    if(dominio === '/') {
+    console.log(dominio == '/' || dominio == '/index.html');
+    if(dominio == '/' || dominio == '/index.html') {
         numero = 9;
         dom2 = 'compartiendo-sonrisas';
     } 
@@ -27,6 +29,7 @@ function domain() {
 
 function count() {
     domain();
+    console.log(dom2, numero);
 
     let analyticsData = {
         id: numero,
@@ -45,6 +48,7 @@ function cli() {
     if(event.target.tagName === "A" || event.target.tagName === "BUTTON" || event.target.tagName === "IMG") {
         // if(dominio != 'https://compartiendo-sonrisas.desarrolladorweb.blog/') numero = 10;
         domain();
+        console.log(dom2, numero);
 
         let analyticsData = {
             id: numero,
@@ -57,6 +61,6 @@ function cli() {
     }
 }
 
-main.addEventListener('click', cli);
+// main.addEventListener('click', cli);
 
-count();
+// count();
