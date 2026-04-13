@@ -11,20 +11,20 @@ const opciones = {
   const formatoConZona = new Intl.DateTimeFormat("es-PA", opciones).format(ahora);
   
 const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
-const dominio = window.location;
+const dominio = window.location.pathname;
 console.log(dominio);
 console.log(window.location.pathname);
 
 
-let dom = window.location.pathname.split('/');
+let dom = dominio.split('/');
 console.log(dom);
 let dom2 = dom[2];
 let numero = 10;
 
 function domain() {
-    if(dominio === 'https://compartiendo-sonrisas.desarrolladorweb.blog') {
+    if(dominio === '/') {
         numero = 9;
-        dom2 = dominio;
+        dom2 = 'compartiendo-sonrisas';
     } 
 }
 
