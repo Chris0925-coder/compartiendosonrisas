@@ -17,7 +17,6 @@ let dom = dominio.split('/');
 
 let dom2 = dom[2];
 let numero = 10;
-console.log(dom, dom2);
 
 function domain() {
     console.log(dominio == '/' || dominio == '/index.html');
@@ -29,7 +28,6 @@ function domain() {
 
 function count() {
     domain();
-    console.log(dom2, numero);
 
     let analyticsData = {
         id: numero,
@@ -48,7 +46,6 @@ function cli() {
     if(event.target.tagName === "A" || event.target.tagName === "BUTTON" || event.target.tagName === "IMG") {
         // if(dominio != 'https://compartiendo-sonrisas.desarrolladorweb.blog/') numero = 10;
         domain();
-        console.log(dom2, numero);
 
         let analyticsData = {
             id: numero,
