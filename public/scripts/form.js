@@ -16,7 +16,7 @@ const form = document.getElementById('form');
 //     return false;
 // }
 
-function form() {
+function formSubmit() {
 
     form.addEventListener('submit', async function(event) {
         event.preventDefault(); 
@@ -39,11 +39,10 @@ function form() {
           .then((data) => console.log(data))
           .catch((error) => console.error('Error:', error));
        
-
-
         alert('Form submitted successfully!');
-
 
         window.location.href = "https://compartiendo-sonrisas.desarrolladorweb.blog/";
     });
 }
+
+formSubmit();
