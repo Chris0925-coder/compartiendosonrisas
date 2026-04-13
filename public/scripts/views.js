@@ -14,12 +14,24 @@ const url = `https://visits-christian-guardias-projects.vercel.app/count`;
 const dominio = window.location.pathname;
 
 let dom = dominio.split('/');
+let dom2 = dom[2];
+let numero = 10;
+
+function domain() {
+    if(dominio === 'https://compartiendo-sonrisas.desarrolladorweb.blog/') {
+        numero = 9;
+        dom2 = dominio;
+    } 
+}
 
 function count() {
+    domain();
+    console.log(numero);
+
     let analyticsData = {
-        id: 9,
+        id: numero,
         count: 1,
-        domain: dom[2],
+        domain: dom2,
         date: `última vista: ${formatoConZona}`,
         clicks: 0,
     };
@@ -31,11 +43,14 @@ function count() {
 
 function cli() {    
     if(event.target.tagName === "A" || event.target.tagName === "BUTTON" || event.target.tagName === "IMG") {
+        // if(dominio != 'https://compartiendo-sonrisas.desarrolladorweb.blog/') numero = 10;
+        domain();
+        console.log(numero);
 
         let analyticsData = {
-            id: 9,
+            id: numero,
             count: 0,
-            domain: dominio,
+            domain: dom2,
             date: `última vista: ${formatoConZona}`,
             clicks: 1,
         };
