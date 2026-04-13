@@ -19,7 +19,6 @@ let dom2 = dom[2];
 let numero = 10;
 
 function domain() {
-    console.log(dominio == '/' || dominio == '/index.html');
     if(dominio == '/' || dominio == '/index.html') {
         numero = 9;
         dom2 = 'compartiendo-sonrisas';
