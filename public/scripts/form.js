@@ -1,4 +1,4 @@
-const url = `https://visits-christian-guardias-projects.vercel.app/submit`;
+const url2 = `https://visits-christian-guardias-projects.vercel.app/submit`;
 
 const form = document.getElementById('form');
 
@@ -28,7 +28,7 @@ function formSubmit() {
             return false;
         } 
 
-          await fetch(url, {
+          await fetch(url2, {
             method: 'POST',
             body: JSON.stringify({
                 email: formData.get('email'), 
