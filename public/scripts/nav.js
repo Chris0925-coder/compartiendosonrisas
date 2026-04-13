@@ -1,4 +1,4 @@
-const date = new Date();
+const ahora = new Date();
 const footerDate = document.querySelector('.date');
 
 const menu = document.querySelector('.btn-menu');
@@ -17,4 +17,4 @@ function navListen() {
 }
 
 
-footerDate.append(date.getFullYear());
+footerDate.append(ahora.getFullYear());

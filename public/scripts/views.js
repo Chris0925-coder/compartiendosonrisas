@@ -1,5 +1,5 @@
 const main = document.querySelector("body");
-const ahora = new Date();
+
 
 const opciones = {
     timeZone: "America/Panama",
@@ -18,7 +18,7 @@ let dom2 = dom[2];
 let numero = 10;
 
 function domain() {
-    if(dominio === 'https://compartiendo-sonrisas.desarrolladorweb.blog/') {
+    if(dominio === 'https://compartiendo-sonrisas.desarrolladorweb.blog') {
         numero = 9;
         dom2 = dominio;
     } 
@@ -27,6 +27,7 @@ function domain() {
 function count() {
     domain();
     console.log(numero);
+    console.log(dom2);
 
     let analyticsData = {
         id: numero,
@@ -46,6 +47,7 @@ function cli() {
         // if(dominio != 'https://compartiendo-sonrisas.desarrolladorweb.blog/') numero = 10;
         domain();
         console.log(numero);
+        console.log(dom2);
 
         let analyticsData = {
             id: numero,
