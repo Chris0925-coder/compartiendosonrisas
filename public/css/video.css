@@ -1,0 +1,13 @@
+video {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	display: block;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4em;
+	max-width: 1800px;
+}
