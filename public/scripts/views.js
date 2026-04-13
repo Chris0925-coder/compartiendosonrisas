@@ -30,7 +30,7 @@ function count() {
 
 
 function cli() {    
-    if(event.target.tagName === "A" || event.target.tagName === "BUTTON") {
+    if(event.target.tagName === "A" || event.target.tagName === "BUTTON" || event.target.tagName === "IMG") {
 
         let analyticsData = {
             id: 9,
@@ -43,6 +43,6 @@ function cli() {
     }
 }
 
-// main.addEventListener('click', cli);
+main.addEventListener('click', cli);
 
-// count();
+count();
