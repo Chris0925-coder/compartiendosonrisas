@@ -11,9 +11,13 @@ const opciones = {
   const formatoConZona = new Intl.DateTimeFormat("es-PA", opciones).format(ahora);
   
 const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
-const dominio = window.location.pathname;
+const dominio = window.location;
+console.log(dominio);
+console.log(window.location.pathname);
 
-let dom = dominio.split('/');
+
+let dom = window.location.pathname.split('/');
+console.log(dom);
 let dom2 = dom[2];
 let numero = 10;
 
