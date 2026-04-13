@@ -12,12 +12,9 @@ const opciones = {
   
 const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
 const dominio = window.location.pathname;
-console.log(dominio);
-console.log(window.location.pathname);
-
 
 let dom = dominio.split('/');
-console.log(dom);
+
 let dom2 = dom[2];
 let numero = 10;
 
@@ -30,8 +27,6 @@ function domain() {
 
 function count() {
     domain();
-    console.log(numero);
-    console.log(dom2);
 
     let analyticsData = {
         id: numero,
@@ -50,8 +45,6 @@ function cli() {
     if(event.target.tagName === "A" || event.target.tagName === "BUTTON" || event.target.tagName === "IMG") {
         // if(dominio != 'https://compartiendo-sonrisas.desarrolladorweb.blog/') numero = 10;
         domain();
-        console.log(numero);
-        console.log(dom2);
 
         let analyticsData = {
             id: numero,
