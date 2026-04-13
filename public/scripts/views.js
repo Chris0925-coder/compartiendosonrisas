@@ -57,6 +57,6 @@ function cli() {
     }
 }
 
-main.addEventListener('click', cli);
+// main.addEventListener('click', cli);
 
-count();
+// count();
