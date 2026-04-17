@@ -89,7 +89,7 @@ a {
 }
 
 nav, section, header {
-  padding: 0 30px;
+  /*padding: 0 30px;*/
   max-width: 1800px;
   margin: 0 auto;
 }
@@ -114,8 +114,9 @@ button {
 .logo {
   background: url("../img/logo.jpg") center / contain no-repeat;
   /*background: url("/img/fundation/logo.jpg") center / contain no-repeat;*/
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
+  padding: 20px;
 }
 
 .navbar {
