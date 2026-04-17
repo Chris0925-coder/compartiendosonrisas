@@ -47,7 +47,6 @@ let title = [
 
 
 images.forEach((img, index) => {
-	console.log(img);
 
 	newDiv.innerHTML += `
 		<article>
@@ -67,7 +66,6 @@ images.forEach((img, index) => {
 
 Object.values(newDiv.children).forEach(img => {
 	img.addEventListener('click', (e) => {
-		console.log(e)
 		if(e.target.tagName === 'IMG') {
 			modalContent.innerHTML = e.srcElement.outerHTML;
 			modal.classList.toggle('show');
