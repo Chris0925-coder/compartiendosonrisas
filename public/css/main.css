@@ -183,13 +183,13 @@
   /*list-style: upper-latin;*/
   list-style: none;
   /*padding: 0 10px;*/
-  padding-left: 20px;
+  padding-left: 10px;
   /*margin: 0 auto;*/
   width: 100%;
   /*border: 1px solid;*/
   li {
     width: 210px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
   }
 }
 
