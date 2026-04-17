@@ -49,13 +49,13 @@ let title = [
 images.forEach((img, index) => {
 
 	newDiv.innerHTML += `
-		<article>
-			<h3>${title[index]}</h3>
+		<article>			
 			<div class="images">
 				<picture><img src="public/img/${img}"></picture>
 				<picture><img src="public/img/${imagesB[index]}"></picture>
 				<picture><img src="public/img/${imagesC[index]}"></picture>
 			</div>
+			<h3>${title[index]}</h3>
 		</article>
 		`;
 

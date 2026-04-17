@@ -151,7 +151,7 @@
   padding: 40px 10px;
   .program-content {
     display: flex;
-    align-items: anchor-center;
+    align-items: start;
   }
 }
 
@@ -162,9 +162,14 @@
   /*flex-grow: .2;*/
   /*border: 1px solid;*/
   /*border: 1px solid green;*/
+  h2 {
+    margin-bottom: 40px;
+  }
   p {
     padding: 0;
     padding-left: 10px;
+    max-width: 330px;
+    margin: 25px auto;
     /*border: 1px solid;*/
   }
 }
@@ -181,6 +186,10 @@
   /*margin: 0 auto;*/
   width: 100%;
   /*border: 1px solid;*/
+  li {
+    width: 210px;
+    margin: 0 auto;
+  }
 }
 
 .images-container {
@@ -196,7 +205,7 @@
   position: relative;
 }
 .images-content h3{
-  margin-bottom: 15px;
+  margin: 15px auto;
   
   /*border: 1px solid red;*/
   /*padding: 1em;*/
@@ -214,7 +223,7 @@
   /*width: 95vw;*/
   /*height: auto;*/
   /*height: calc(100% - 271px);*/
-  max-width: 400px;
+  max-width: 600px;
   /*width: 55vw;*/
   height: 331px;
   scrollbar-width: none;
@@ -231,7 +240,7 @@
     position: relative;
     gap: 4px;
     height: auto;
-    width: 400px;
+    width: 600px;
     /*max-width: 400px;*/
     align-items: center;
     margin: 20px auto;
@@ -287,7 +296,12 @@
 }*/
 
 .galeria {
-  margin: 15px 20px;
+  margin: 0 auto;
+  padding-top: 0;
+  p {
+    margin: 0 auto;
+    padding-top: inherit;
+  }
 }
 
 .images {
@@ -304,7 +318,7 @@
     /*position: absolute;*/
     gap: 4px;
     height: auto;
-    width: 400px;
+    width: 600px;
     height: 250px;
     align-items: center;
     /*border: 1px solid red;*/
