@@ -162,6 +162,7 @@
   /*flex-grow: .2;*/
   /*border: 1px solid;*/
   /*border: 1px solid green;*/
+  margin: 0 auto 30px auto;
   h2 {
     margin-bottom: 40px;
   }
@@ -240,7 +241,7 @@
     position: relative;
     gap: 4px;
     height: auto;
-    width: 600px;
+    /*width: 100vw;*/
     /*max-width: 400px;*/
     align-items: center;
     margin: 20px auto;
@@ -420,19 +421,26 @@
   } 
 
   .carousel-inner {
-    width: 100%;
+    width: 100vw;
     .new-div {
-      width:100%;
+      width:100vw;
         article {
-          width:100%;
+          width:100vw;
 
         }
     }
   }
 
+  .images {
+    /*width: 100;*/
+    margin: 0;
+    padding: 0;
+  }
+
   #program .program-content {
     display: flex;
     flex-direction: column;
+    width: 100vw;
   }
 
   /*.images-content {*/
