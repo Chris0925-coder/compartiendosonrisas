@@ -448,6 +448,15 @@
     width: 100vw;
   }
 
+  .modal {
+    padding: 30px 0;
+  }
+
+  .modal picture {
+    width: 100%;
+  }
+
+
   /*.images-content {*/
     /*display: flex;
     flex-wrap: wrap;
