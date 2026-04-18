@@ -458,7 +458,16 @@
 
   .program-text {
     min-width: 100%;
-    /*width: 100vw;*/
+    p {
+      padding: 0;
+
+    }
+        /*width: 100vw;*/
+  }
+
+  .program-list {
+    padding-left: 20px;
+    min-width: 100%;
   }
 
   .modal {
