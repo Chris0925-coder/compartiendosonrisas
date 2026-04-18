@@ -15,7 +15,9 @@ let newDiv = document.createElement('div');
 newDiv.setAttribute('class', 'new-div');
 
 let images = [
-	`<picture><img src="public/img/entrega_de_alimentos/new_img_a.jpg"></picture>`,
+	`<picture><img src="public/img/entrega_de_alimentos/IMG-20260417-WA0013.jpg"></picture>
+	<picture><img src="public/img/entrega_de_alimentos/new_img_a.jpg"></picture>
+	`,
 	// "new_img_a.jpg",
 	// "new_img_c.jpg",
 	// "646468067_122123658381082145_4855597248081070575_n_.jpg",
