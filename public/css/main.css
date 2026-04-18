@@ -152,7 +152,7 @@
   .program-content {
     display: flex;
     align-items: start;
-    gap: 0.3em;
+    gap: 0.8em;
     width: 100%;
     justify-content: space-around;
     margin: 0 auto;
@@ -168,7 +168,7 @@
   /*border: 1px solid;*/
   /*border: 1px solid green;*/
   /*margin: 0 auto 30px auto;*/
-  min-width: 300px;
+  min-width: 250px;
   h2 {
     margin-bottom: 40px;
   }
@@ -184,7 +184,7 @@
 .program-list {
   color: var(--parraf);
   /*margin: 0 auto;*/
-  justify-self: center;
+  /*justify-self: center;*/
   /*text-align: center;*/
   /*list-style: upper-latin;*/
   /*list-style: none;*/
@@ -194,9 +194,10 @@
   padding-left: 40px;
   /*width: 100%;*/
   max-width: 350px;
+  margin: 0 auto;
   /*border: 1px solid;*/
   li {
-    width: 210px;
+    /*width: 210px;*/
     margin: 5px 0;
     /*margin: 0 auto;*/
   }
@@ -467,7 +468,7 @@
 
   .program-list {
     padding-left: 20px;
-    min-width: 100%;
+    /*min-width: 100%;*/
   }
 
   .modal {
