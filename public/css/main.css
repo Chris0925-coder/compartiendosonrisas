@@ -90,8 +90,9 @@
 
 /*Text*/
 .text-title {
- font-size: .8rem;
- font-weight: bold;
+ font-size: .7rem;
+ /*font-weight: bold;*/
+ padding: 0;
 }
 
 
