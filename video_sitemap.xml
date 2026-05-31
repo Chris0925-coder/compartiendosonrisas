@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>https://compartiendo-sonrisas.desarrolladorweb.blog</loc>
+    <loc>https://compartiendo-sonrisas.desarrolladorweb.blog/pages/video_player</loc>
     <video:video>
       <video:thumbnail_loc>https://compartiendo-sonrisas.desarrolladorweb.blog/public/img/main.avif</video:thumbnail_loc>
       <video:title>Compartiendo Sonrisas</video:title>
       <video:description>Nuestro objetivo es apoyar a las familias en situación de necesidad en la comunidad.</video:description>
       <video:content_loc>https://compartiendo-sonrisas.desarrolladorweb.blog/public/video/VID-20260412-WA0034.mp4</video:content_loc>
-      <video:player_loc>https://compartiendo-sonrisas.desarrolladorweb.blog/pages/video-player.html</video:player_loc>
+      <video:player_loc>https://compartiendo-sonrisas.desarrolladorweb.blog/pages/video-player.html#video</video:player_loc>
     </video:video>
   </url>
 </urlset>
