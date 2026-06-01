@@ -198,7 +198,7 @@ button {
 
 .title {
   display: flex;
-  flex: .4;
+  flex: 0.4;
     flex-direction: column;
     min-width: 350px;
     max-width: 450px;
@@ -207,22 +207,24 @@ button {
     /*border: 1px solid;*/
   /*text-indent: auto;*/
   h1 {
-    text-align: center;
+    text-align: left;
     /*line-height: 1.1;*/
 
-    span {
+    
+  }
+
+  span {
       display: block;
       margin-top: 5px;
       font-size: 16px;
     }
-  }
 
   p {
     color: var(--parraf);
     margin: 0;
     padding: 0;
     /*text-justify: distribute;*/
-    text-align: center;
+    /*text-align: center;*/
   }
   animation: fadein-right-to-left 4s forwards;
 }

@@ -7,7 +7,7 @@
       <video:title>Compartiendo Sonrisas</video:title>
       <video:description>Nuestro objetivo es apoyar a las familias en situación de necesidad en la comunidad.</video:description>
       <video:content_loc>https://compartiendo-sonrisas.desarrolladorweb.blog/public/video/VID-20260412-WA0034.mp4</video:content_loc>
-      <video:player_loc>https://compartiendo-sonrisas.desarrolladorweb.blog/pages/video-player.html#video</video:player_loc>
+      <video:player_loc>https://compartiendo-sonrisas.desarrolladorweb.blog/pages/video-player.html</video:player_loc>
     </video:video>
   </url>
 </urlset>
