@@ -116,7 +116,7 @@
     margin: 20px auto;
     align-items: center;
     /*overflow: hidden;*/
-    justify-content: center;
+    /*justify-content: center;*/
   }
     /*margin: 0 auto;*/
   p {
@@ -127,7 +127,7 @@
     border:2px solid var(--sub-color);
     border-radius: 10px;
     padding: 20px;
-    text-align: center;
+    /*text-align: center;*/
     max-height: 250px;
     overflow-x: scroll;
     scrollbar-width: none;

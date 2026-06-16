@@ -2,6 +2,7 @@
   /*--color: #E1E1E1;*/
   /*--sub-color: hsla(0, 10%, 10%, 0.4);*/
   --parraf: hsl(0, 0%, 40%);
+  --parraf: hsl(0, 0%, 10%);
   /*--color: #B6E693;
   --sub-color: #9BE69B;
   --transparent-color: #B6E69399;
@@ -13,7 +14,8 @@
   --color: #F0120C;
   --sub-color: #F08E54;
   --transparent-color: #F0120C99;
-  --transparent-sub-color: #F08E5459;
+  /*--transparent-sub-color: #F08E5459;*/
+  --transparent-sub-color: #b06E2459;
 }
 
 * {
@@ -54,6 +56,7 @@ p {
   /*text-wrap: balance;*/
   hyphenate-limit-chars: 7;
   hyphens: auto;
+  text-wrap: wrap;
   line-height: 1.4;
   padding: 20px;
   /*border: 1px solid;*/
@@ -206,10 +209,10 @@ button {
     justify-content: center;
     /*border: 1px solid;*/
   /*text-indent: auto;*/
-  h1 {
+  div {
     text-align: left;
     /*line-height: 1.1;*/
-
+    font-size: 28px;
     
   }
 
