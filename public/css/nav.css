@@ -3,6 +3,26 @@
   /*--sub-color: hsla(0, 10%, 10%, 0.4);*/
   --parraf: hsl(0, 0%, 40%);
   --parraf: hsl(0, 0%, 10%);
+  --sun:      #F2A93B;
+      --sun-lt:   #FEF3E2;
+      --terra:    #C0533A;
+      --green:    #3A7D5A;
+      --green-lt: #EBF4EE;
+      --sky:      #EAF3F8;
+      --ink:      #1C1C1A;
+      --warm:     #4A3728;
+      --muted:    #7A6E65;
+      --divider:  #E8E2DA;
+      --cream:    #FDFAF6;
+      --white:    #FFFFFF;
+
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans:  'Nunito', system-ui, sans-serif;
+
+      --r-sm: 8px;
+      --r-md: 16px;
+      --r-lg: 24px;
+      --r-xl: 40px;
   /*--color: #B6E693;
   --sub-color: #9BE69B;
   --transparent-color: #B6E69399;
@@ -18,17 +38,21 @@
   --transparent-sub-color: #b06E2459;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*, *::before, *::after { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
 }
 
+html { scroll-behavior: smooth; }
+
 body {
-  font-family: "Roboto", system-ui, sans-serif;
-  /*background-color: black;*/
-  scroll-behavior: smooth;
-  /*place-content: center;*/
+  font-family: var(--sans);
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.65;
+      font-size: 16px;
+      overflow-x: hidden;
 }
 
 h1 {
@@ -113,6 +137,149 @@ button {
     scale: 0.92;
   }
 }
+
+/* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 80vh;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background: var(--warm);
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('../img/main.avif');
+      background-size: cover;
+      background-position: center 30%;
+      opacity: 0.35;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(28,20,15,0.3) 0%,
+        rgba(28,20,15,0.65) 60%,
+        rgba(28,20,15,0.92) 100%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: clamp(4rem, 10vw, 8rem) clamp(1.5rem, 5vw, 3rem);
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.75rem;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(242,169,59,0.18);
+      border: 1px solid rgba(242,169,59,0.4);
+      color: var(--sun);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+    }
+
+    .hero-title {
+      font-family: var(--serif);
+      font-size: clamp(2.6rem, 6vw, 4.5rem);
+      line-height: 1.1;
+      color: var(--white);
+      font-weight: 900;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--sun);
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.75);
+      max-width: 52ch;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--sun);
+      color: var(--warm);
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-primary:hover { background: #e09828; transform: translateY(-2px); }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: var(--white);
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .btn-ghost:hover { background: rgba(255,255,255,0.18); }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .hero-scroll::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
+    }
 
 .logo {
   background: url("../img/logo.jpg") center / contain no-repeat;
