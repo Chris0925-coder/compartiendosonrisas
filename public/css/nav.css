@@ -152,8 +152,9 @@ button {
       position: absolute;
       inset: 0;
       background-image: url('../img/main.avif');
-      background-size: cover;
-      background-position: center 30%;
+      background-size: contain;
+      background-repeat: repeat-y;
+        /*background-position: center 30%;*/
       opacity: 0.35;
     }
 
