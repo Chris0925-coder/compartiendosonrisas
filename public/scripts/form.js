@@ -33,7 +33,7 @@ function formSubmit() {
             body: JSON.stringify({
                 email: formData.get('email'), 
                 control: formData.get('control'),
-                from: formData.get('web'),
+                web: formData.get('web'),
             }),
           })
           .then((response) => response.text())
